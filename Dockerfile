@@ -1,7 +1,7 @@
 # Dockerfile for nomad-axe
 FROM debian:jessie
 MAINTAINER axerunners
-LABEL description="NOMAD-AXE - dockerized AXE daemon for running masternodes"
+LABEL description="Dockerized AXE daemon for running masternodes"
 
 RUN apt-get update \
  && apt-get install -y curl iptables git python-virtualenv \
