@@ -1,2 +1,2 @@
 # nomad-axe
-dockerized AXE daemon for running masternodes
+Docker image for axed with masternode support
