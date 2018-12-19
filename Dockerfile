@@ -8,7 +8,7 @@ RUN apt-get update \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
- ENV AXE_DOWNLOAD_URL  github.com/AXErunners/axe/releases/download/v1.1.5/axecore-1.1.8-x86_64-linux-gnu.tar.gz
+ ENV AXE_DOWNLOAD_URL  github.com/AXErunners/axe/releases/download/v1.1.8/axecore-1.1.8-x86_64-linux-gnu.tar.gz
  RUN cd /tmp \
   && curl -sSL "$AXE_DOWNLOAD_URL" -o axe.tgz "$AXE_DOWNLOAD_URL.asc" -o axe.tgz.asc \
   && tar xzf axe.tgz --no-anchored axed axe-cli --transform='s/.*\///' \
