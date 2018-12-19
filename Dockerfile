@@ -35,7 +35,7 @@ RUN cd axe \
 
 #fetch to semi recent block
 #warning! makes for large image, but fast startup times.
-ENV BLOCKS 35369
+ENV BLOCKS 150000
 RUN axed & sleep 10;echo "syncing blocks(this will take a while)"; while [ ${t:-0} -lt $BLOCKS ];do t=$(axe-cli getinfo|grep blocks); t=${t##* };t=${t%,};echo -n ${t:-0}" "; sleep 10;done;axe-cli getinfo;axe-cli stop;sleep 10
 
 RUN rm /axe/wallet.dat
