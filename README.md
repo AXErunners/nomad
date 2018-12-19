@@ -1,2 +1,2 @@
-# nomad-axe
-Docker image for axed with masternode support
+# nomad
+Docker image for `axed` with masternode support.
