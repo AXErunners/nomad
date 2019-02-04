@@ -33,7 +33,7 @@ RUN set -x \
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
     && gosu nobody true
 
-ENV VERSION ${VERSION:-1.1.8}
+ENV VERSION ${VERSION:-1.2.0}
 RUN wget -O /tmp/${COMPONENT}.tar.gz "https://github.com/AXErunners/axe/releases/download/v${VERSION}/axecore-${VERSION}-x86_64-linux-gnu.tar.gz" \
     && cd /tmp/ \
     && tar zxvf ${COMPONENT}.tar.gz \
