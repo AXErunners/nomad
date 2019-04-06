@@ -35,8 +35,11 @@ printtoconsole=1
 masternode=1
 masternodeaddr=<SERVER IP ADDRESS>:9937
 masternodeprivkey=<MASTERNODE PRIVATE KEY>
+masternodeblsprivkey=<MASTERNODE BLS SECRET>
 ```
 
 Where `<SERVER IP ADDRESS>` is the public facing IPv4 address that the masternode will be reachable at.
 
 `<MASTERNODE PRIVATE KEY>` is the private key that you generated earlier (with `axe-cli masternode genkey`).
+
+`<MASTERNODE BLS PRIVATE KEY>` is the BLS secret that you generated earlier (with `axe-cli bls generate`).
