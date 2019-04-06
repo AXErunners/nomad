@@ -42,4 +42,4 @@ Where `<SERVER IP ADDRESS>` is the public facing IPv4 address that the masternod
 
 `<MASTERNODE PRIVATE KEY>` is the private key that you generated earlier (with `axe-cli masternode genkey`).
 
-`<MASTERNODE BLS PRIVATE KEY>` is the BLS secret that you generated earlier (with `axe-cli bls generate`).
+`<MASTERNODE BLS SECRET>` is the BLS secret that you generated earlier (with `axe-cli bls generate`).
